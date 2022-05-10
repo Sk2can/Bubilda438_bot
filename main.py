@@ -30,7 +30,7 @@ async def command_start(message: types.Message):
 @dp.message_handler()
 async def bot_message(message:types.Message):
     if message.text == '🎱Рандомное число':
-        await bot.send_message(message.chat.id,'Ваше число: '+ str(random.randint(1,101)))
+        await bot.send_message(message.chat.id,'Ваше число: '+ f'<tg-spoiler> {str(random.randint(1,101))} </tg-spoiler>', parse_mode=types.ParseMode.HTML)
 
     elif message.text == '👻Мемы':
         await bot.send_message(message.chat.id,'мемы!')
