@@ -1,4 +1,4 @@
-aiogram==2.20
-pyowm==3.3.0
-pycbrf==1.1.0
-DateTime==4.4
+aiogram
+pyowm
+pycbrf
+DateTime
