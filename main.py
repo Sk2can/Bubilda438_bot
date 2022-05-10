@@ -34,7 +34,7 @@ async def bot_message(message:types.Message):
         await bot.send_message(message.chat.id,'Здесь будет запись на стирку')
 
     elif message.text == '👻Мемы':
-        await bot.send_message(message.chat.id,'Он должен будет кинуть мем')
+        await bot.send_message(message.chat.id,'мемы!')
 
     elif message.text == '💵Курсы валют':
         rates = (ExchangeRates(datetime.now()))
