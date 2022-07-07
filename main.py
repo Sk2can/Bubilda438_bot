@@ -62,5 +62,6 @@ async def  wash(call: types.CallbackQuery):
     await  call.message.answer('Выберите машинку', reply_markup=nav.inline_kb2)
 
 
+
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates = False)
