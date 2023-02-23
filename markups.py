@@ -4,5 +4,6 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardBut
 btnRandom = KeyboardButton('🎱Рандомное число')
 btnMoney = KeyboardButton('💵Курсы валют')
 btnWeather = KeyboardButton('☔️Погода')
-mainMenu = ReplyKeyboardMarkup(resize_keyboard= True).add(btnRandom,btnMoney, btnWeather)
+btnCoins = KeyboardButton('🟡Монеты')
+mainMenu = ReplyKeyboardMarkup(resize_keyboard= True).add(btnRandom,btnMoney, btnWeather,btnCoins)
 
