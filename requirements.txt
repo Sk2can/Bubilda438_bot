@@ -2,3 +2,5 @@ aiogram
 pyowm
 pycbrf
 DateTime
+beautifulsoup4
+requests
