@@ -1,7 +1,5 @@
 import requests
-import re
 from bs4 import BeautifulSoup as bs
-import pandas as pd
 from pyowm import OWM
 from datetime import datetime
 from aiogram import Bot, Dispatcher, executor, types
@@ -86,15 +84,6 @@ async def bot_message(message: types.Message):
         weight = str(weight)[: str(weight).find("</")]
         diameter = str(coin_info)[str(coin_info).find("Диаметр")+21:]
         diameter = str(diameter)[: str(diameter).find("</")]
-
-        print(price)
-        print(country)
-        print(value)
-        print(year)
-        print(period)
-        print(material)
-        print(weight)
-        print(diameter)
 
         avers_img = str(avers_img) [str(avers_img).find('src="')+5 : str(avers_img).find('" title')]
         reverse_img = str(reverse_img)[str(reverse_img).find('src="') + 5: str(reverse_img).find('" title')]
