@@ -15,7 +15,7 @@ w = observation.weather
 
 mouths = {1: 'января', 2: 'февраля', 3: 'марта', 4: 'апреля', 5: 'мая', 6: 'июня', 7: 'июля', 8: 'августа', 9: 'сентября', 10: 'октября', 11: 'ноября', 12: 'декабря'}
 
-TOKEN = '5116309199:AAHnaiV0dkA_CXcFy_59ScGFc8KWpdsUzVc'
+TOKEN = '5116309199:AAF60LxmfGoWn0hMydxtwS7ISI-5r5a113c'
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
