@@ -43,12 +43,12 @@ async def bot_message(message: types.Message):
     elif message.text == '💵Курсы валют':
         rates = (ExchangeRates(datetime.now()))
         await bot.send_message(message.chat.id,
-                               'Курс валют на ' + str(rates.date_received.day) + ' ' + mouths[rates.date_received.month] + ':' + '\n' '💵Курс доллара: ' + str(rates['USD'].rate) + ' руб.' + '\n' + '💶Курс евро: ' +
+                               'Курс валют на ' + str(rates.date_requested.day) + ' ' + mouths[rates.date_requested.month] + ':' + '\n' '💵Курс доллара: ' + str(rates['USD'].rate) + ' руб.' + '\n' + '💶Курс евро: ' +
                                str(rates['EUR'].rate) + ' руб.')
 
     elif message.text == '☔️Погода':
         await bot.send_message(message.chat.id,
-                               '🌤Погода в Хабаровске: ' + '\n' + w.detailed_status + '\n' + 'Температура: ' +
+                               '🌤Погода в Хабаровске:' +'\n' + w.detailed_status + '\n' + 'Температура: ' +
                                str(round(w.temperature('celsius')['temp'])) + '°' + '\n' + 'Скорость ветра: ' + str(
                                    round(w.wind()['speed'])) +
                                ' м.с')
