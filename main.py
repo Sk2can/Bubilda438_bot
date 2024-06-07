@@ -1,11 +1,11 @@
-import requests
-from bs4 import BeautifulSoup as bs
-from pyowm import OWM
-from datetime import datetime
 from aiogram import Bot, Dispatcher, executor, types
-import logging
-import markups as nav
+from bs4 import BeautifulSoup as bs
 from pycbrf import ExchangeRates
+from datetime import datetime
+from pyowm import OWM
+import markups as nav
+import requests
+import logging
 import random
 
 owm = OWM('cf3b80c3d4d89a6e5f283d3c2088de66')
@@ -14,7 +14,6 @@ observation = mgr.weather_at_place('Khabarovsk,RU')
 w = observation.weather
 
 mouths = {1: 'января', 2: 'февраля', 3: 'марта', 4: 'апреля', 5: 'мая', 6: 'июня', 7: 'июля', 8: 'августа', 9: 'сентября', 10: 'октября', 11: 'ноября', 12: 'декабря'}
-
 TOKEN = '5116309199:AAF60LxmfGoWn0hMydxtwS7ISI-5r5a113c'
 
 bot = Bot(token=TOKEN)
